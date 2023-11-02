@@ -41,7 +41,7 @@ In the repo I have save my EFI with all necessary setting for a fully working Ha
 ## Useful links
 - https://github.com/TECHNIKVERBOT/Dell-Precision-7520-OpenCore 
 - https://github.com/zmlu/Hackintosh-OC-Colorful-C.B150M-i5-6500-Skylake-HD530
-- 
+- https://github.com/MonitorControl/MonitorControl
 
 ## Verdict
 
