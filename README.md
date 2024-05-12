@@ -8,22 +8,22 @@ In the repo I have save my EFI with all necessary setting for a fully working Ha
 
 ## Issue I encoutered
 
-[fixed] CPU compatibility, and getting error of not booting the OS it self
-[fixed] Audio not working
+- [fixed] CPU compatibility, and getting error of not booting the OS it self
+- [fixed] Audio not working
     - by adding PciRoot(0x0)/Pci(0x1F,0x3):
         - device-id: 0x10028010
         - ig-platform-id: 0x887
     - or maybe adding VoodooHDA.kext, or AppleHDA.kext
-[fixed] HD530 Graphic acceleration
+- [fixed] HD530 Graphic acceleration
     - this one took me alot, and it was tricky, I had to set in BIOS the graphic memory to be 64mb
     - disable VT-d
     - and one of repo that helped me fixig that was [repo](https://github.com/TECHNIKVERBOT/Dell-Precision-7520-OpenCore)
     - in boot-args: `-v keepsyms=1 debug=0x100 -igfxsklaskbl -cdfon igfxonln=1 hda-gfx`
-[NotAchieved] Connecting dGPU Rx480, 
+- [NotAchieved] Connecting dGPU Rx480, 
     - tried all opencore docs for this, only thing I got is a Flickering BlackScreen after boot
     - I heard about patching but I haven't tried it yet
 
-[Fixed] Wireless mouse not working
+- [Fixed] Wireless mouse not working
     - by adding USBInjectAll.kext
 
 
